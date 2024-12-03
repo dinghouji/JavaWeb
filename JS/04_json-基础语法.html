@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>json-基本语法</title>
+       <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <script>
+        var jsonstr = '{"name": "Jack", "age": 18, "addr":["北京", "上海","南京"]}';
+        //console.log(jsonstr.name);  json 不是对象，不可以直接引用其中的数据
+
+        var jsonobject = JSON.parse(jsonstr);
+        console.log(jsonobject.name);
+
+        var jsonStr = JSON.stringify(jsonobject);
+        console.log(jsonStr);
+
+      </script>
+   </body>
+</html>
